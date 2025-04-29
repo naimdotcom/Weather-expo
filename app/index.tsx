@@ -16,7 +16,7 @@ export default function Index() {
     <View style={{ flex: 1, position: "relative", backgroundColor: "#000" }}>
       <StatusBar barStyle="light-content" />
       <Image
-        blurRadius={70}
+        blurRadius={50}
         source={require("../assets/images/bg.png")}
         style={{
           width: "100%",
