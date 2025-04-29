@@ -17,7 +17,7 @@ export default function Index() {
       <StatusBar barStyle="light-content" />
       <Image
         blurRadius={70}
-        source={require("../assets/images/background.png")}
+        source={require("../assets/images/bg.png")}
         style={{
           width: "100%",
           height: "100%",
