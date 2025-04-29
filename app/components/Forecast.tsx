@@ -25,7 +25,6 @@ const Forecast = () => {
   const apiKey = process.env.EXPO_PUBLIC_API_KEY;
   const apiUrl = process.env.EXPO_PUBLIC_API_URL;
   const fetchWeatherData = async () => {
-    setLoading(true);
     try {
       setLoading(true);
       if (!location) return;
@@ -44,7 +43,6 @@ const Forecast = () => {
   useEffect(() => {
     fetchWeatherData();
   }, [location]);
-  console.log("weather", weather);
   useEffect(() => {
     if (
       !weather?.sys?.sunrise ||
@@ -78,7 +76,6 @@ const Forecast = () => {
       countries.getName(weather?.sys?.country, "en", {
         select: "official",
       }) || "";
-    console.log("desc", description);
     const isIncludeWeatherImage = WeatherImages[description];
     if (!description) return;
     setWeatherImage(
