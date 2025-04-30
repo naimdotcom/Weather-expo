@@ -3,6 +3,7 @@
 <p align="center">
 <img src="./readme_images/preview.png" width="800" />
 </p>
+
 A sleek, cross-platform weather app built using **Expo Router**, **React Native**, and **Zustand**. It fetches real-time weather data from the OpenWeatherMap API, offering a clean UI and smooth experience across iOS, Android, and web.
 
 ## 🚀 Features
