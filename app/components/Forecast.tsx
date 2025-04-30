@@ -4,7 +4,8 @@ import React, { useEffect } from "react";
 import { Image, StyleSheet, Text, View } from "react-native";
 import { ArrowLongUpIcon, CloudIcon } from "react-native-heroicons/outline";
 import countries from "i18n-iso-countries";
-countries.registerLocale(require("i18n-iso-countries/langs/en.json"));
+import enLocale from "i18n-iso-countries/langs/en.json";
+countries.registerLocale(enLocale);
 const drop = require("@/assets/images/drop.png");
 const sun = require("@/assets/images/sun.png");
 const cloud = require("@/assets/images/cloud.png");
@@ -97,9 +98,9 @@ const Forecast = () => {
     <View style={styles.container}>
       <Text style={styles.locationCity}>
         {loading ? "loading" : `${weather?.name ? weather?.name : ""}`}
-        <Text style={styles.locationCountry}>
-          {countryName ? `, ${countryName}` : ""}
-        </Text>
+        {countryName ? (
+          <Text style={styles.locationCountry}>{`, ${countryName}`}</Text>
+        ) : null}
       </Text>
       <Image
         style={styles.image}

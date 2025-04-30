@@ -1,7 +1,7 @@
 import { useIsIOS } from "@/store/isIosStore";
 import { useLocationStore } from "@/store/locationStore";
 import { debounce } from "lodash";
-import React, { useState } from "react";
+import React, { useCallback, useState } from "react";
 import {
   KeyboardAvoidingView,
   ScrollView,
@@ -19,7 +19,15 @@ const SearchBar = () => {
   const handleChangeText = (text: string) => {
     setLocation(text);
   };
-  const debounceSearch = debounce(handleChangeText, 1500);
+  const debounceSearch = useCallback(
+    debounce((text: string) => {
+      if (!text || text === "undefined" || typeof text !== "string") return;
+      if (text && text !== "undefined") {
+        setLocation(text);
+      }
+    }, 1500),
+    []
+  );
   return (
     <KeyboardAvoidingView behavior={isIOS ? "padding" : "height"}>
       <ScrollView
