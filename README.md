@@ -2,6 +2,24 @@
 
 A sleek, cross-platform weather app built using **Expo Router**, **React Native**, and **Zustand**. It fetches real-time weather data from the OpenWeatherMap API, offering a clean UI and smooth experience across iOS, Android, and web.
 
+<table>
+  <tr>
+    <td width="50%" align="left" valign="top">
+      <h3>🧰 Tech Stack</h3>
+      <ul>
+        <li><a href="https://expo.dev/">Expo</a></li>
+        <li><a href="https://reactnative.dev/">React Native</a></li>
+        <li><a href="https://github.com/pmndrs/zustand">Zustand</a> for state management</li>
+        <li><a href="https://openweathermap.org/api">OpenWeatherMap API</a></li>
+        <li>TypeScript, Lodash, and modern navigation via <code>expo-router</code></li>
+      </ul>
+    </td>
+    <td width="50%" align="right">
+      <img src="./readme_images/Simulator Screenshot - iPhone 16 Pro - 2025-04-30 at 17.45.29.png" width="200" />
+    </td>
+  </tr>
+</table>
+
 ## 🚀 Features
 
 - 🔍 Search for cities and get current weather conditions
