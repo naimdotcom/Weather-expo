@@ -1,10 +1,9 @@
-# Weather Native 🌦️
-
-A sleek, cross-platform weather app built using **Expo Router**, **React Native**, and **Zustand**. It fetches real-time weather data from the OpenWeatherMap API, offering a clean UI and smooth experience across iOS, Android, and web.
+# Weather Expo 🌦️
 
 <p align="center">
-<img src="./readme_images/Simulator Screenshot - iPhone 16 Pro - 2025-04-30 at 17.45.29.png" width='200' />
+<img src="./readme_images/preview.png" width="800" />
 </p>
+A sleek, cross-platform weather app built using **Expo Router**, **React Native**, and **Zustand**. It fetches real-time weather data from the OpenWeatherMap API, offering a clean UI and smooth experience across iOS, Android, and web.
 
 ## 🚀 Features
 
